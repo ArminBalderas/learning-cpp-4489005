@@ -1,4 +1,5 @@
 #include "records.h"
+#include <iostream>
 
 Student::Student(int the_id, std::string the_name){
     id = the_id;
@@ -85,4 +86,7 @@ unsigned char StudentRecords::get_course_credits(int cid) const{
     return courses[j].get_credits();
 }
 
-float StudentRecords::get_GPA(int sid) const{}
+
+float StudentRecords::get_GPA(int sid) const{
+    std::cout << "Student: " << students[sid].get_name() << std::endl; 
+}

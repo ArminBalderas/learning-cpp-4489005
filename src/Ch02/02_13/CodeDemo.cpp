@@ -9,7 +9,8 @@ int main(){
     float result; 
 
     // Write your code here
-    
+    auto sum = nums[0] + nums[1] + nums[2] + nums[3] + nums[4];
+    result = sum /5.0f;
     std::cout << "The average is " << result << std::endl;
     
     std::cout << std::endl << std::endl;
